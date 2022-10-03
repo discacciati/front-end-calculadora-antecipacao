@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&family=Roboto:wght@400;700&display=swap");
+
+.FormDiv {
+  display: flex;
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 80vw;
+  margin: 39px 5px 6px 5px;
+}
+.Form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border: none;
+  background: #ffffff;
+  padding: 28px 5px;
+  width: 78vw;
+}
+.FormTitle {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #212529;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.FormGeral {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.FormLabel {
+  font-family: "Pt Serif", serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: #212529;
+  text-align: left;
+  margin-bottom: 12px;
+}
+.FormInput {
+  width: 55vw;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 10px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #868e96;
+}
+.FormInput:focus {
+  outline: 0;
+}
+.FormSpan {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+  color: #868e96;
+}
+
+.FormError {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+  color: #691b07;
+}
+
+.options:focus {
+  outline: 0;
+  outline: 0;
+  background: #f8f9fa;
+  border: 1.2px solid #212529;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+  color: #868e96;
+}
+.FormBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 20px;
+  width: 55vw;
+  height: 48px;
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  box-sizing: border-box;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  margin-top: 19px;
+}
+
+.FormBtn:hover {
+  cursor: pointer;
+  background: #e34981;
+  border: 2px solid #e34981;
+}
+
+/*--- Tablet----*/
+@media (min-width: 426px) {
+  .FormDiv {
+    width: 80vw;
+    margin: 39px 5px 6px 5px;
+  }
+
+  .Form {
+    width: 79vw;
+    margin: 10px 5px;
+    border: none;
+    background: #ffffff;
+    padding: 28px 5px;
+  }
+
+  .FormInput {
+    width: 32vw;
+  }
+
+  .FormLabel {
+    width: 32vw;
+  }
+
+  .FormBtn {
+    width: 55vw;
+  }
+}
+
+/*-----Laptop 1024-------*/
+@media (min-width: 769px) {
+  .FormDiv {
+    width: 363px;
+    margin: 39px 5px 6px 5px;
+  }
+
+  .Form {
+    margin: 10px 15px;
+    border: none;
+    background: #ffffff;
+    padding: 28px 10px;
+  }
+
+  .FormInput {
+    width: 314px;
+  }
+
+  .FormLabel {
+    width: 314px;
+  }
+
+  .FormBtn {
+    width: 314px;
+  }
+}
