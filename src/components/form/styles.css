@@ -6,7 +6,7 @@
   box-sizing: border-box;
   border-radius: 4px;
   width: 80vw;
-  margin: 39px 5px 6px 5px;
+  height: 460px;
 }
 .Form {
   display: flex;
@@ -42,7 +42,7 @@
   margin-bottom: 12px;
 }
 .FormInput {
-  width: 55vw;
+  width: 70vw;
   height: 52px;
   display: flex;
   flex-direction: row;
@@ -106,7 +106,7 @@
   justify-content: center;
   align-items: center;
   padding: 13px 20px;
-  width: 55vw;
+  width: 70vw;
   height: 48px;
   background: #fd377e;
   border: 2px solid #fd377e;
@@ -132,28 +132,28 @@
 /*--- Tablet----*/
 @media (min-width: 426px) {
   .FormDiv {
-    width: 80vw;
-    margin: 39px 5px 6px 5px;
+    width: 363px;
+    margin: 39px 0px 6px 5px;
   }
 
   .Form {
-    width: 79vw;
-    margin: 10px 5px;
+    width: 363px;
+    margin: 10px 15px;
     border: none;
     background: #ffffff;
     padding: 28px 5px;
   }
 
   .FormInput {
-    width: 32vw;
+    width: 314px;
   }
 
   .FormLabel {
-    width: 32vw;
+    width: 314px;
   }
 
   .FormBtn {
-    width: 55vw;
+    width: 314px;
   }
 }
 
@@ -161,7 +161,7 @@
 @media (min-width: 769px) {
   .FormDiv {
     width: 363px;
-    margin: 39px 5px 6px 5px;
+    margin: 39px 0px 6px 0px;
   }
 
   .Form {

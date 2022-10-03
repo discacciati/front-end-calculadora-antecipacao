@@ -20,6 +20,8 @@ const Home = () => {
     }
   }, [dataSale, errors, navigate]);
 
+  console.log(dataSale);
+
   return (
     <>
       <div className="main">

@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*--- Tablet----*/
+@media (min-width: 426px) {
+  .main {
+    flex-direction: row;
+  }
+}

@@ -30,7 +30,7 @@ const Form = ({ setDataSale, days, setErrors }) => {
 
     api
       .post("/", sale)
-      .then((response) => console.log(response.data))
+      .then((response) => setDataSale(response.data))
       .catch((err) => {
         if (err.response.status === 400) {
           errorAmount.push("O valor deve ser maior ou igual a 1000.");
