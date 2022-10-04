@@ -26,10 +26,15 @@ Request: </br>
 $ curl --request POST \
 ----------url https://frontend-challenge-7bu3nxh76a-uc.a.run.app \
 ----------header 'content-type: application/json' \
-----------data '{ </br> \***\*\_\_\*\*** "amount": 15000, </br> \***\*\_\_\*\*** "installments": 3, </br> \***\*\_\_\*\*** "mdr": 4, </br> \***\*\_\_\*\*** "days": [30, 60, 90] </br> \***\*\_\_\*\*** }' </br>
+----------data '{ </br>
+---------------- "amount": 15000, </br>
+---------------- "installments": 3, </br>
+---------------- "mdr": 4, </br>
+---------------- "days": [30, 60, 90] </br>
+---------------- }' </br>
 
 Response: </br>
-**\_\_\_** {"30":13824,"60":14208,"90":14400}
+{"30":13824,"60":14208,"90":14400}
 
 ## Inicializando a aplicação
 
@@ -40,7 +45,7 @@ $ yarn start </br>
 
 ## Documentação da Aplicação
 
-O MCV desta documentação segue o padrão: </br>
+O MVC desta documentação segue o padrão: </br>
 --- src </br>
 ------ tests </br>
 ------ components </br>
