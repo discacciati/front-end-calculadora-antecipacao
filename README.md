@@ -43,9 +43,9 @@ Em seguida utilize os seguintes comandos pela linha de comando: </br>
 $ yarn </br>
 $ yarn start </br>
 
-## Documentação da Aplicação
+## Arquitetura da Aplicação
 
-O MVC desta documentação segue o padrão: </br>
+Segue o padrão: </br>
 --- src </br>
 ------ tests </br>
 ------ components </br>

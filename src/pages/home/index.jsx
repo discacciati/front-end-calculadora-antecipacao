@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const [dataSale, setDataSale] = useState([]);
   const [days, setDays] = useState([1, 15, 30, 90]);
-  const [errors, setErrors] = useState([]);
+  const [errorsApi, setErrorsApi] = useState([]);
   const [aside, setAside] = useState(false);
   const navigate = useNavigate();
 
@@ -18,20 +18,21 @@ const Home = () => {
     if (dataSale.length !== 0) {
       setAside(true);
     }
-  }, [dataSale, errors, navigate]);
+  }, [dataSale, errorsApi, navigate]);
 
   console.log(dataSale);
 
   return (
     <>
       <div className="main">
-        {errors.length === 0 ? (
+        {errorsApi.length === 0 ? (
           <>
             <div className="FormsLancamento">
               <Form
                 setDataSale={setDataSale}
                 days={days}
-                setErrors={setErrors}
+                setErrorsApi={setErrorsApi}
+                errorsApi={errorsApi}
               />
             </div>
             <div className="aside">

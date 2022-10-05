@@ -1,4 +1,4 @@
-const ErrorPage = ({ errors }) => {
+const ErrorPage = ({ errorsApi }) => {
   return <> errors</>;
 };
 

@@ -4,9 +4,12 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import api from "../../services/api";
+import { useNavigate } from "react-router-dom";
 
-const Form = ({ setDataSale, days, setErrors }) => {
+const Form = ({ setDataSale, days, setErrorsApi, errorsApi }) => {
   const errorAmount = [];
+  const navigate = useNavigate();
+
   const Schema = yup.object().shape({
     amount: yup
       .number("Escreva um valor")
@@ -36,7 +39,8 @@ const Form = ({ setDataSale, days, setErrors }) => {
           errorAmount.push("O valor deve ser maior ou igual a 1000.");
           console.log(errorAmount);
         } else {
-          console.log(err);
+          setErrorsApi([...errorsApi, err]);
+          navigate("/errors");
         }
       });
   };
